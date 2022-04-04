@@ -10,8 +10,10 @@
     <a *ngFor="let item of history" 
       href="#" 
       class="list-group-item list-group-item-active"
+      (click)="search(item)"
     >
-      {{item}}
+      
+      {{item | titlecase}}
     </a>
   </div>
 

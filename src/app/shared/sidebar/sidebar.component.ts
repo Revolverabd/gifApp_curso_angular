@@ -11,6 +11,10 @@ export class SidebarComponent {
 
   constructor(private gifsService: GifsService) { }
 
+  search(termino: string) {
+    this.gifsService.searchGif(termino)
+  }
+
   get history() {
     return this.gifsService.getHistory()
   }
